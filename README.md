@@ -88,8 +88,7 @@ Required GitHub repository secrets:
 | `CLOUDFLARE_API_TOKEN`  | Cloudflare dashboard → My Profile → API Tokens (Pages: Edit + User Details: Read) |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare dashboard → right sidebar                                             |
 | `NOTION_API_KEY`        | Notion integration secret (`secret_...`)                                         |
-| `NOTION_PUBLIC_DB_ID`   | Notion database ID for public pages                                              |
-| `NOTION_PRIVATE_DB_ID`  | Notion database ID for posts                                                     |
+| `NOTION_PUBLIC_DB_ID`   | Notion database ID for public posts (renders at `/blog/`)                        |
 | `ANTHROPIC_API_KEY`     | Reserved for future build-time content steps                                     |
 
 If you'd rather have Cloudflare build the project itself, point Pages at this repo with build command `npm run build` and output dir `dist`, then delete `.github/workflows/deploy.yml`.
